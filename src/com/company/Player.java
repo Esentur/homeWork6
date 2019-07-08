@@ -21,4 +21,5 @@ public abstract class Player {
     }
 
     public abstract void makeSpeech();
+    public abstract void printInfo();
 }

@@ -9,7 +9,7 @@ public class Magic extends Player {
     }
 
     public void printInfo() {
-        System.out.println(super.getHealth() + ";" + super.getHit() + ";" + getMagicalHit());
+        System.out.println(super.getHealth() + ";" + super.getHit() + ";крит.урон дает + " + getMagicalHit()+" урона");
     }
 
     public int getMagicalHit() {
@@ -21,7 +21,7 @@ public class Magic extends Player {
     }
 
     public void magicalHit() {
-        super.setHit(66);
+        super.setHit(super.getHit()+magicalHit);
     }
 
     @Override

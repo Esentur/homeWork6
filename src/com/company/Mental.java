@@ -8,7 +8,7 @@ public class Mental extends Player {
     }
 
     public void printInfo() {
-        System.out.println(super.getHealth() + ";" + super.getHit() + ";" + getKineticHit());
+        System.out.println(super.getHealth() + ";" + super.getHit() + ";крит.урон дает + " + getKineticHit()+" урона");
     }
 
     public int getKineticHit() {
@@ -19,8 +19,8 @@ public class Mental extends Player {
         this.kineticHit = kineticHit;
     }
 
-    public void psyhicalHit() {
-        super.setHit(45);
+    public void kineticHit() {
+        super.setHit(super.getHit()+kineticHit);
     }
 
     @Override

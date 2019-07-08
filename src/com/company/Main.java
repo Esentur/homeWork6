@@ -9,19 +9,22 @@ public class Main {
         shaokhan.printInfo();
 
         Warrior dobrynya = new Warrior(250, 20);
-        Magic merlin = new Magic(240, 20);
-        Mental professorX = new Mental(230, 20);
-        
+        Magic merlin = new Magic(250, 20);
+        Mental professorX = new Mental(250, 20);
+
         int num = shaokhan.getDefence();
         switch (num) {
             case 1:
                 dobrynya.setPhysicalHit(10);
+                dobrynya.psyhicalHit();
                 break;
             case 2:
                 merlin.setMagicalHit(20);
+                merlin.magicalHit();
                 break;
             case 3:
                 professorX.setKineticHit(40);
+                professorX.kineticHit();
                 break;
             default:
                 break;
@@ -29,17 +32,14 @@ public class Main {
         }
 
         dobrynya.makeSpeech();
-        dobrynya.psyhicalHit();
         dobrynya.printInfo();
 
 
         merlin.makeSpeech();
-        merlin.getMagicalHit();
         merlin.printInfo();
 
 
         professorX.makeSpeech();
-        professorX.getKineticHit();
         professorX.printInfo();
 
     }

@@ -1,5 +1,4 @@
 package com.company;
-
 import java.util.Random;
 
 public class Boss extends Player {
@@ -12,7 +11,7 @@ public class Boss extends Player {
     }
 
     public void printInfo() {
-        System.out.println(super.getHealth() + ";" + super.getHit() + ";" + getDefence());
+        System.out.println(super.getHealth() + ";" + super.getHit() + "; тип защиты босса - " + getDefence());
     }
 
     public int getDefence() {

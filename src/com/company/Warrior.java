@@ -9,7 +9,7 @@ public class Warrior extends Player {
     }
 
     public void printInfo() {
-        System.out.println(super.getHealth() + ";" + super.getHit() + ";" + getPhysicalHit());
+        System.out.println(super.getHealth() + ";" + super.getHit() + ";крит.урон дает + " + getPhysicalHit()+" урона");
     }
 
     public int getPhysicalHit() {
@@ -21,7 +21,7 @@ public class Warrior extends Player {
     }
 
     public void psyhicalHit() {
-        super.setHit(50);
+        super.setHit(super.getHit()+physicalHit);
     }
 
     @Override
